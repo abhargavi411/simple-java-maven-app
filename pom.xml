@@ -51,14 +51,15 @@
         <executions>
           <execution>
             <id>enforce-maven</id>
+            <phase>enforce</phase>
             <goals>
               <goal>enforce</goal>
             </goals>
             <configuration>
               <rules>
-                <requireMavenVersion>
-                  <version>[3.5.4,)</version>
-                </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>[1.8.0,)</version>
+                </requireJavaVersion>
               </rules>
             </configuration>
           </execution>
